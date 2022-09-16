@@ -16,3 +16,16 @@ img {
     width: 100%;
 }
 em, address {font-style: normal;}
+
+.flexaj {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ir_pm {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999em;
+}
