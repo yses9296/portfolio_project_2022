@@ -10,6 +10,9 @@
     background-color: rgb(234, 207, 207);
 }
 
+body {
+    font-family: 'NexonLv1Gothic';
+}
 /* Header */
 .header_wrap {
     width: 100%;
@@ -230,7 +233,7 @@
     background: url(../img/banner_img_01.jpg) no-repeat center / cover;
 }
 .image_2 {
-    background: url(../img/banner_img_02.jpg) no-repeat center / cover;;
+    background: url(../img/banner_img_02.jpg) no-repeat center / cover;
 }
 .image {
     text-align: left;
@@ -269,4 +272,65 @@
 }
 .image_btn.orange {
     background-color: #BB9350;
+}
+
+/* ImgText */
+.imgText_wrap {
+    width: 100%;
+    height: 740px;
+}
+.imgText_contents {
+    display: flex;
+    justify-content: space-between;
+}
+.imgText_contents > div {
+    width: 32%;
+    height: 500px;
+}
+
+
+.imgT_txt_tit {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: left;
+    word-break: keep-all;
+    margin-bottom: 20px;
+}
+.imgT_txt_desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
+    color: #666666;
+    word-break: keep-all;
+    margin-bottom: 20px;
+}
+.imgT_txt_list li {
+    position: relative;
+    padding-left: 20px;
+    text-align: left;
+    color: #666666;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+}
+.imgT_txt_list li::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #666;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 16px;
+}
+.imgText_img {
+    border-radius: 10px;
+}
+.imgText_img.imgText_1 {
+    background: url(../img/eco_01.jpg) no-repeat center / cover;
+}
+.imgText_img.imgText_2 {
+    background: url(../img/eco_02.jpg) no-repeat center / cover;
 }
