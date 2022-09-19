@@ -352,7 +352,6 @@ body {
 }
 .card_cont {
     width: 32%;
-    background: rgb(216, 177, 205);
 }
 .card_header {
     overflow: hidden;
@@ -372,6 +371,7 @@ body {
     padding: 24px;
     text-align: left;
     background: #f5f5f5;
+    position: relative;
 }
 .card_body .card_body_tit {
     font-size: 22px;
@@ -391,6 +391,8 @@ body {
     word-break: keep-all;
 }
 .card_body .card_body_btn {
+    position: absolute;
+    bottom: 0;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
@@ -470,4 +472,58 @@ body {
     margin-top: 70px;
     padding-top: 40px;
     text-align: center;
+}
+
+
+/* Responsive */
+/* PC ver. */
+@media screen and (max-width: 1400px) {
+    /* Header */
+    .header_logo {
+        font-size: 24px;
+    }
+    .header_menu ul li a {
+        padding: 13px 20px;
+    }
+    .header_member a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .container {
+        width: 1000px;
+    }
+    /* Header */
+    .header_menu ul li a {
+        padding: 13px 15px;
+    }
+    .header_member {
+        display: flex;
+        justify-content:space-between;
+    }
+    .header_member a {
+        padding: 10px 25px;
+    }
+    .header_member a:last-child {margin: 0;}
+
+    /* Slide */
+    .slide_img {
+        padding: 0 20px;
+    }
+    /* Card */
+    .card_body {
+        height: 230px;
+    }
+}
+/* Laptop ver. */
+@media screen and (max-width: 1020px) {
+    .header_logo {
+        width: 180px;
+    }
+}
+
+/* Tablet ver. */
+@media screen and (max-width: 768px) {
+    
 }
